@@ -985,7 +985,7 @@
                 this.inputSection = document.querySelector('.input-section');
                 this.resultsSection = document.getElementById('results-section');
                 this.form = document.getElementById('wrapped-form');
-                this.loader = document.querySelector('.loader');
+                // this.loader = document.querySelector('.loader');
                 this.btnText = document.querySelector('.btn-text');
                 this.errorMsg = document.getElementById('error-message');
                 this.content = document.getElementById('wrapped-content');
@@ -1068,11 +1068,11 @@
 
             toggleLoading(isLoading) {
                 if (isLoading) {
-                    this.loader.classList.remove('hidden');
+                    // this.loader.classList.remove('hidden');
                     this.btnText.textContent = 'Crunching Numbers...';
                     this.errorMsg.classList.add('hidden');
                 } else {
-                    this.loader.classList.add('hidden');
+                    // this.loader.classList.add('hidden');
                     this.btnText.textContent = 'Generate Wrapped';
                 }
             }
